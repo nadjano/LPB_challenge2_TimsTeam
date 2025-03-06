@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import argparse
 import pandas as pd
 from Bio import SeqIO
@@ -9,7 +7,7 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description="Identify amino acid mutations unique to pathogenic strains."
     )
-    parser.add_argument("-i", "--input", required=True, help="Input FASTA file path of aligned sequences")
+    parser.add_argument("-i", "--input", required=True, help="Input FASTA file path of ")
     parser.add_argument("-o", "--output", help="Output file path (default: stdout)")
     return parser.parse_args()
 
@@ -80,7 +78,8 @@ def identify_unique_mutations(df):
         amino_acids = df.groupby('pathogenic')[col].apply(set)
         pathogenic_aa = amino_acids.get('pathogenic', set())
         non_pathogenic_aa = amino_acids.get('non_pathogenic', set())
-
+        
+        # Check if there is no overlap between pathogenic and non-pathogenic amino acids
         if not pathogenic_aa.intersection(non_pathogenic_aa):
             unique_mutations[col] = (pathogenic_aa, non_pathogenic_aa)
     

@@ -1,1 +1,1 @@
-Position 10: Pathogenic -> {'K', 'R'}, Non-Pathogenic -> {'G'}
+Position 10: Pathogenic -> {'R', 'K'}, Non-Pathogenic -> {'G'}

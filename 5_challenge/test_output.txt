@@ -1,0 +1,5 @@
+seq1 length: 20
+seq2 length: 20
+seq1 GC content: 50.0%
+seq2 GC content: 50.0%
+Longest common substring: ATCGGGAATTCCCGATATCG
