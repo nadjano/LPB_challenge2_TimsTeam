@@ -9,7 +9,7 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description="Identify amino acid mutations unique to pathogenic strains."
     )
-    parser.add_argument("-i", "--input", required=True, help="Input FASTA file path")
+    parser.add_argument("-i", "--input", required=True, help="Input FASTA file path of aligned sequences")
     parser.add_argument("-o", "--output", help="Output file path (default: stdout)")
     return parser.parse_args()
 
