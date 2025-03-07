@@ -60,6 +60,6 @@ formatted_results <- results %>% pivot_wider(names_from = Aspect, values_from = 
   pull(output)
 
 # Write formatted output to file
-writeLines(formatted_results, "output.txt")
+writeLines(formatted_results, "output_III.txt")
 
 print("Script finished. Output was saved to output.txt.")

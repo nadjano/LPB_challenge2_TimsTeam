@@ -1,0 +1,2 @@
+Mean mutation rate observed: 1.14e-04
+95% Confidence Interval: [9.2e-05, 1.4e-04]
